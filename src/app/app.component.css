@@ -1,0 +1,216 @@
+.container {
+    position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrollbars */
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(src=./../../../public/blur.jpg); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);  /* Apply blur to the background */
+    z-index: -1;  /* Ensure background is behind other elements */
+  }
+
+.main-div {
+    width: 108%;
+}
+.heading-div {
+   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.1),
+        0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: fit-content;
+    margin: 40px auto;
+    padding-right: 250px;
+    
+}
+.heading-div .name {
+    font-size: 20px;
+  font-weight: 300;
+  color: #2c3e50;
+  margin: 0;
+  width: 100%;
+  padding-right: 60px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.heading-div .title {
+    
+    float: center ;
+    display: ruby-text;
+    margin-left: -450px;
+    margin-top: 80px;
+    white-space: nowrap;  /* Prevent text from breaking into multiple lines */
+    overflow: hidden;     /* Hide overflow */
+    text-overflow: ellipsis; 
+    border-radius: 31px;
+}
+
+.heading-div .title p {
+    padding-right: 60px;
+    display: flex;
+    text-align: center;
+    color: #373839;
+   
+
+    font-size: 18px;
+}
+
+
+
+
+
+.heading-div h1 {
+    display: ruby-text;
+    border-radius: 5px;
+    
+}
+.heading-div h1:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 15px 25px rgba(0, 0, 0, 0.3),
+        0 10px 10px rgba(0, 0, 0, 0.25);
+    }
+
+.title:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 15px 25px rgba(0, 0, 0, 0.3),
+        0 10px 10px rgba(0, 0, 0, 0.25);
+    }
+    
+.image {
+    width: 140px;
+    height: auto;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.2),   /* soft shadow */
+        0 6px 6px rgba(0, 0, 0, 0.2),     /* deeper shadow */
+        0 0 0 1px rgba(0, 0, 0, 0.05);    /* fine edge */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+      
+.image:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 15px 25px rgba(0, 0, 0, 0.3),
+        0 10px 10px rgba(0, 0, 0, 0.25);
+}
+.main-div {
+    
+    display: flex;
+    justify-content: center;    /* Align tabs in the center */
+    gap: 0px;                  /* Space between tabs */
+    
+}
+
+.tab {
+    width: 23%;
+    float: left;
+    cursor: pointer;
+    background: transparent; 
+    border: 2px solid transparent; 
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    transition: background 0.3s, border 0.3s;
+    
+}
+
+.tab:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 15px 25px rgba(0, 0, 0, 0.3),
+        0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.copy-wrap {
+    transform: translate3d(0,-100%,0);
+}
+.content-div {
+   text-align: center;
+}
+
+.content-tab1 {
+    text-align: center;
+    padding-top: 20px;
+    color: #c9ffe2;
+}
+
+.content-tab2 {
+    text-align: center;
+    padding-top: 20px;
+    color: #c9ffe2;
+}
+
+
+.content-tab3 {
+    text-align: center;
+    padding-top: 20px;
+    color: #c9ffe2;
+}
+
+
+.content-tab4 {
+    text-align: center;
+    padding-top: 20px;
+    color: #c9ffe2;
+}
+
+
+div[ngIf] {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 40px;;
+  }
+
+  /* Updated Icon Style */
+  .contact-icons a {
+    display: inline-block;
+    width: 80px;  /* Adjust size */
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .contact-icons img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .contact-icons a:hover img {
+    transform: translateY(-5px);
+    box-shadow:
+      0 15px 25px rgba(0, 0, 0, 0.3),
+      0 10px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .contact-icons a:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }

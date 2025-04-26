@@ -1,0 +1,82 @@
+<div class="container">
+  <div class="background-image"></div>
+<div class="heading-div">
+  <img class="image" src="IMG_5838.JPG" >
+  <div class="name">
+    <h1>MUHAMMED AFNAN H</h1></div>
+    <div class="title">
+      <p>MEAN Full Stack Developer</p>
+      <p>CyberSecurity Enthusiast</p>
+    </div>
+</div>
+<div class="main-div">
+
+  <div class="tab" (click)="changeTab1()">
+    About Me Tab
+
+  </div>
+
+  <div class="tab" (click)="changeTab2()">
+    Qualifications Tab
+
+  </div>
+
+  <div class="tab" (click)="changeTab3()">
+    Projects Tab
+
+  </div>
+
+  <div class="tab" (click)="changeTab4()">
+    Contact Me tab
+
+  </div>
+</div>
+
+<div class="content-div">
+  <div class="content-tab1" *ngIf="tabNumber == 1">
+    <p>I’m a BCA graduate and a dedicated MEAN Stack developer with hands-on experience in building full-stack web applications using MongoDB, Express.js, Angular, and Node.js. I thrive on developing scalable, responsive, and efficient digital solutions. Alongside my tech journey, I have a strong interest in cybersecurity—particularly red teaming—and I’m consistently learning through free resources to sharpen my skills in ethical hacking and system defense. I'm also passionate about entrepreneurship and always eager to explore innovative ideas and opportunities that blend technology with real-world impact.</p>
+
+  </div>
+
+  <div class="content-tab2" *ngIf="tabNumber == 2">
+    <ul>
+      <li><strong>Bachelor of Computer Applications (BCA)</strong> — Graduated in 2024</li>
+      <li><strong>MEAN Stack Developer Certification</strong> — Pursuing from Inmakes Learning Hub</li>
+    </ul>
+    
+
+  </div>
+
+  <div class="content-tab3" *ngIf="tabNumber == 3">
+    <ul>
+      <li>
+        <strong>Online Classroom Portal:</strong>
+        <a href="https://github.com/afn11/OnlineClassRoomPortal" target="_blank">
+          View on GitHub
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="content-tab4" *ngIf="tabNumber == 4">
+    
+    <div class="contact-icons">
+      <a href="https://instagram.com/your_username" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://wa.me/your_number" target="_blank" title="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      </a>
+      <a href="https://linkedin.com/in/your_profile" target="_blank" title="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:your_email@gmail.com" title="Gmail">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+      </a>
+    </div>
+
+  </div>
+
+</div>
+</div>
